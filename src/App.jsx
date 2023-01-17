@@ -21,7 +21,7 @@ return (
 <main className="min-h-screen grid place-content-center bg-black mx-auto overflow-hidden">
   <div style={generateJSXMeshGradient(ELEMENTS)} className=" relative h-[34em] w-[34em] rounded-full transition-all duration-500" />
   <div className="absolute grid place-content-center mx-auto w-full min-h-screen bg-black/80 text-white backdrop-blur-3xl p-8">
-    <div className="w-10/12 mx-auto">
+    <div className={`w-10/12 mx-auto ${showCode ? 'sm:w-3/12' : null} `}>
       <div className="mb-8">
         <h1 className="text-6xl font-bold">Meshify</h1>
         <p className="max-w-sm text-sm mt-3 text-zinc-400">Meshify es una aplicación que te permite generar gradientes de malla con facilidad. Experimenta con diferentes combinaciones de colores y patrones para crear diseños impresionantes.</p>
